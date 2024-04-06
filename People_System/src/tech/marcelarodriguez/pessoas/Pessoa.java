@@ -9,6 +9,8 @@ public class Pessoa {
     private LocalDate dataNascimento;
     private Endereco endereco;
     private Telefone telsContato;
+
+
     public Pessoa(){
         System.out.println(("Criando uma pessoa" + " " + " sem atributos!"));
     }
@@ -19,8 +21,15 @@ public class Pessoa {
         this.telsContato = telsContato;
     }
 
-    public void cadastrar() {
-
+    public void cadastrar(String nome, LocalDate dataNascimento, Endereco endereco, Telefone telsContato) {
+        System.out.println("Digite o Nome: ");
+        this.setNome(nome);
+        System.out.println("Digite a data de Nascimento: ");
+        this.setDataNascimento(dataNascimento);
+        System.out.println("Digite o Endereço: ");
+        this.setEndereco(endereco);
+        System.out.println("Digite o Telefone de Contato: ");
+        this.setTelsContato(telsContato);
     }
     public int obterIdade(){
         int idade = 0;
