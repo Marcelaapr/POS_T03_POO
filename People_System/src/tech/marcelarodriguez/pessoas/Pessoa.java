@@ -1,6 +1,7 @@
 package tech.marcelarodriguez.pessoas;
 
 import tech.marcelarodriguez.composicoes.*;
+import tech.marcelarodriguez.estruturadedados.ListaDeTelefonesNaoOrdenados;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -8,7 +9,7 @@ public class Pessoa {
     private String nome;
     private LocalDate dataNascimento;
     private Endereco endereco;
-    private Telefone telsContato;
+    private ListaDeTelefonesNaoOrdenados telsContato;
 
 
     public Pessoa(){
